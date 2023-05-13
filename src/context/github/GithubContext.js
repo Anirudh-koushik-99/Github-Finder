@@ -35,6 +35,13 @@ export const GithubProvider = ({ children }) => {
     });
   };
 
+  //CLEAR USERS FROM STATE
+  const clearUsers = () => {
+    dispatch({
+      type: 'CLEAR_USERS'
+    })
+  }
+
   //SET LOADING
   const setLoading = () => dispatch({ type: "SET_LOADING" });
 
@@ -44,6 +51,7 @@ export const GithubProvider = ({ children }) => {
         users: state.users,
         loading: state.loading,
         searchUsers,
+        clearUsers
       }}
     >
       {children}
