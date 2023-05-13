@@ -23,7 +23,8 @@ function App() {
           <Footer />
         </div>
       </Router>
-   </GithubProvider>
+      </GithubProvider>
+
   );
 }
 
